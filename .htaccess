@@ -1,0 +1,6 @@
+# Mos lejo hapjen direkte te te dhenave te studenteve nga shfletuesi
+# (skedaret sherbehen vetem permes file.php / print.php)
+RewriteEngine On
+RewriteRule ^(data|students|templates|database|portable|\.git)(/|$) - [F]
+RewriteRule (^|/)\.(git|gitignore)$ - [F]
+RewriteRule ^(settings\.json|router\.php|config\.php|db\.php|auth\.php|lib\.php|reset_admin\.php|RESET_ADMIN\.bat)$ - [F]

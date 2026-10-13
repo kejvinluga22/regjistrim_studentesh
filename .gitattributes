@@ -1,0 +1,6 @@
+# Rreshtat: Windows (CRLF) per skedaret e ekzekutueshem, normalizim per te tjeret
+* text=auto
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+*.docx binary
+*.dll binary

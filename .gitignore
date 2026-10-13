@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------
+#  Të dhënat e studentëve NUK hyjnë në GitHub (privatësia)
+# ---------------------------------------------------------------
+# Word + foto e studentëve
+/students/
+/studentprovva/
+# fotot e vogla, studentët e fshirë, kopjet e vjetra JSON
+/data/
+# dosja e zgjedhur për çdo kompjuter (version i vjetër)
+/settings.json
+
+# Ndërtimi i versionit portativ (ZIP me PHP brenda)
+/portable/build/
+*.zip
+
+# Skedarë të përkohshëm të Word / Windows
+~$*
+.~*
+Thumbs.db
+desktop.ini

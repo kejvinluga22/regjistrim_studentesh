@@ -1,0 +1,54 @@
+﻿REGJISTRIMI I STUDENTËVE – CIT
+==============================
+
+Programi ruan të dhënat e studentëve në databazën MySQL të XAMPP-it.
+Letrat Word dhe fotot ruhen në dosje (Viti \ Raundi \ Bachelor ose Master).
+
+ÇFARË DUHET NË KOMPJUTER
+- Windows 10 ose 11
+- XAMPP (për MySQL)  ->  https://www.apachefriends.org  (instalohet në C:\xampp)
+- Kamerë (e laptopit ose USB)
+
+HERËN E PARË NË NJË KOMPJUTER
+1. Kopjoni gjithë dosjen "Regjistrimi_Studenteve" në kompjuter (ose USB).
+2. Klikoni dy herë "START.bat".
+   - Nëse MySQL është i fikur, START.bat e ndez vetë.
+   - Hapet një dritare e zezë (MOS E MBYLLNI gjatë punës) dhe shfletuesi me programin.
+   - Nëse Windows pyet "Windows protected your PC": klikoni "More info" -> "Run anyway".
+3. Programi tregon "Krijo databazën": shtypni butonin.
+   (Databaza krijohet nga skedari DATABAZA_regjistrimi_cit.sql)
+4. Hyni me llogarinë fillestare:  përdoruesi "admin", fjalëkalimi "admin".
+   Pastaj ndryshoni fjalëkalimin te ⚙ Admin -> Llogaria (programi jua kujton).
+5. Zgjidhni KU DO TË RUHEN STUDENTËT (p.sh. D:\Studentet).
+6. Shfletuesi pyet për kamerën: shtypni "Allow / Lejo".
+
+ÇDO DITË
+- Klikoni START.bat -> hyni me llogarinë e administratorit -> regjistroni studentët.
+- Kur të mbaroni: mbyllni dritaren e zezë.
+
+⚙ ADMIN (lart djathtas)
+- Shtoni / çaktivizoni programe, profile, nivele (p.sh. PhD) dhe raunde (p.sh. Raundi 4).
+- Shtoni fusha shtesë për studentët (p.sh. Nr. personal, Qyteti, Data e lindjes).
+- Ndryshoni emrin / fjalëkalimin e llogarisë.
+- "Shkarko backup (.sql)": kopje e plotë e databazës (studentët, programet, llogaria).
+
+TRANSPORTI NË NJË KOMPJUTER TJETËR
+- Vetëm programi (bosh):  kopjoni dosjen dhe ndiqni "HERËN E PARË".
+- Me studentët:  te ⚙ Admin shkarkoni backup-in .sql, pastaj në kompjuterin tjetër:
+  http://localhost/phpmyadmin  ->  Import  ->  zgjidhni skedarin .sql
+  dhe kopjoni edhe dosjen e studentëve (Word + foto).
+- Databaza (kur nevojitet me dorë):  DATABAZA_regjistrimi_cit.sql  (phpMyAdmin -> Import)
+
+KU RUHEN SKEDARËT
+- Word + foto:  <dosja e zgjedhur>\2026-2027\Raundi 1\Bachelor\Emri Mbiemri.docx / .jpg
+- Fotot e vogla të listës dhe studentët e fshirë:  app\data\  (mos i fshini)
+- Lidhja me MySQL (nëse ndryshon fjalëkalimi i MySQL):  app\config.php
+
+HARRUAT FJALËKALIMIN E ADMINISTRATORIT?
+- Klikoni dy herë "RESET_ADMIN.bat" dhe shtypni P (Po).
+- Llogaria kthehet në:  përdoruesi "admin", fjalëkalimi "admin".
+- Studentët, programet dhe fotot mbeten. Pastaj ndryshoni fjalëkalimin.
+
+KUJDES
+- Mos e hiqni USB-në ndërsa programi është i hapur.
+- Bëni backup çdo ditë (⚙ Admin -> Shkarko backup) dhe kopjoni dosjen e studentëve.
